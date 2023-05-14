@@ -4,7 +4,7 @@
             "multi-dataset":{
                 "your_tts":{
                     "description": "Your TTS model accompanying the paper https://arxiv.org/abs/2112.02418",
-                    "github_rls_url": "https://coqui.gateway.scarf.sh/v0.6.1_models/tts_models--multilingual--multi-dataset--your_tts.zip",
+                    "github_rls_url": "https://coqui.gateway.scarf.sh/v0.10.1_models/tts_models--multilingual--multi-dataset--your_tts.zip",
                     "default_vocoder": null,
                     "commit": "e9a1953e",
                     "license": "CC BY-NC-ND 4.0",
@@ -141,7 +141,7 @@
                     "license": "bsd-3-clause",
                     "contact": null,
                     "commit": null
-                },   
+                },
                 "fast_pitch": {
                     "description": "FastPitch model trained on LJSpeech using the Aligner Network",
                     "github_rls_url": "https://coqui.gateway.scarf.sh/v0.6.1_models/tts_models--en--ljspeech--fast_pitch.zip",
@@ -150,6 +150,24 @@
                     "author": "Eren Gölge @erogol",
                     "license": "apache 2.0",
                     "contact": "egolge@coqui.com"
+                },
+                "overflow": {
+                    "description": "Overflow model trained on LJSpeech",
+                    "github_rls_url": "https://coqui.gateway.scarf.sh/v0.10.0_models/tts_models--en--ljspeech--overflow.zip",
+                    "default_vocoder": "vocoder_models/en/ljspeech/hifigan_v2",
+                    "commit": "3b1a28f",
+                    "author": "Eren Gölge @erogol",
+                    "license": "apache 2.0",
+                    "contact": "egolge@coqui.ai"
+                },
+                "neural_hmm": {
+                    "description": "Neural HMM model trained on LJSpeech",
+                    "github_rls_url": "https://coqui.gateway.scarf.sh/v0.11.0_models/tts_models--en--ljspeech--neural_hmm.zip",
+                    "default_vocoder": "vocoder_models/en/ljspeech/hifigan_v2",
+                    "commit": "3b1a28f",
+                    "author": "Shivam Metha @shivammehta25",
+                    "license": "apache 2.0",
+                    "contact": "d83ee8fe45e3c0d776d4a865aca21d7c2ac324c4"
                 }
             },
             "vctk": {
@@ -202,6 +220,16 @@
                     "license": "apache 2.0",
                     "contact": "adamfroghyar@gmail.com"
                 }
+            },
+            "jenny": {
+                "jenny":{
+                    "description": "VITS model trained with Jenny(Dioco) dataset. Named as Jenny as demanded by the license. Original URL for the model https://www.kaggle.com/datasets/noml4u/tts-models--en--jenny-dioco--vits",
+                    "github_rls_url": "https://coqui.gateway.scarf.sh/v0.14.0_models/tts_models--en--jenny--jenny.zip",
+                    "default_vocoder": null,
+                    "commit": "ba40a1c",
+                    "license": "custom - see https://github.com/dioco-group/jenny-tts-dataset#important",
+                    "author": "@noml4u"
+                }
             }
         },
         "es": {
@@ -223,7 +251,7 @@
                     "author": "@NeonGeckoCom",
                     "license": "bsd-3-clause"
                 }
-            } 
+            }
         },
         "fr": {
             "mai": {
@@ -608,6 +636,50 @@
                     "license": "bsd-3-clause"
                 }
             }
+        },
+        "ca": {
+            "custom": {
+                "vits":{
+                    "github_rls_url": "https://coqui.gateway.scarf.sh/v0.10.1_models/tts_models--ca--custom--vits.zip",
+                    "default_vocoder": null,
+                    "commit": null,
+                    "description": " It is trained from zero with 101460 utterances consisting of 257 speakers, approx 138 hours of speech. We used three datasets;\nFestcat and Google Catalan TTS (both TTS datasets) and also a part of Common Voice 8. It is trained with TTS v0.8.0.\nhttps://github.com/coqui-ai/TTS/discussions/930#discussioncomment-4466345",
+                    "author": "@gullabi",
+                    "license": "CC-BY-4.0"
+                }
+            }
+        },
+        "fa":{
+            "custom":{
+                "glow-tts": {
+                    "github_rls_url": "https://coqui.gateway.scarf.sh/v0.10.1_models/tts_models--fa--custom--glow-tts.zip",
+                    "default_vocoder": null,
+                    "commit": null,
+                    "description": "persian-tts-female-glow_tts model for text to speech purposes. Single-speaker female voice Trained on persian-tts-dataset-famale. \nThis model has no compatible vocoder thus the output quality is not very good. \nDataset: https://www.kaggle.com/datasets/magnoliasis/persian-tts-dataset-famale.",
+                    "author": "@karim23657",
+                    "license": "CC-BY-4.0"
+                }
+            }
+        },
+        "bn":{
+            "custom":{
+                "vits-male":{
+                    "github_rls_url":"https://coqui.gateway.scarf.sh/v0.13.3_models/tts_models--bn--custom--vits_male.zip",
+                    "default_vocoder": null,
+                    "commit": null,
+                    "description": "Single speaker Bangla male model. For more information -> https://github.com/mobassir94/comprehensive-bangla-tts",
+                    "author": "@mobassir94",
+                    "license": "Apache 2.0"
+                },
+                "vits-female":{
+                    "github_rls_url":"https://coqui.gateway.scarf.sh/v0.13.3_models/tts_models--bn--custom--vits_female.zip",
+                    "default_vocoder": null,
+                    "commit": null,
+                    "description": "Single speaker Bangla female model. For more information -> https://github.com/mobassir94/comprehensive-bangla-tts",
+                    "author": "@mobassir94",
+                    "license": "Apache 2.0"
+                }
+            }
         }
     },
     "vocoder_models": {
@@ -755,6 +827,19 @@
                     "github_rls_url": "https://coqui.gateway.scarf.sh/v0.6.1_models/vocoder_models--tr--common-voice--hifigan.zip",
                     "description": "HifiGAN model using an unknown speaker from the Common-Voice dataset.",
                     "author": "Fatih Akademi",
+                    "license": "MIT",
+                    "commit": null
+                }
+            }
+        }
+    },
+    "voice_conversion_models":{
+        "multilingual":{
+            "vctk":{
+                "freevc24":{
+                    "github_rls_url": "https://coqui.gateway.scarf.sh/v0.13.0_models/voice_conversion_models--multilingual--vctk--freevc24.zip",
+                    "description": "FreeVC model trained on VCTK dataset from https://github.com/OlaWod/FreeVC",
+                    "author": "Jing-Yi Li @OlaWod",
                     "license": "MIT",
                     "commit": null
                 }
